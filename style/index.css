@@ -43,7 +43,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey; 
+    /* border:1px solid grey;  */
 }
 
 
@@ -131,6 +131,7 @@ nav{
 
 /*------------------------Top Section Styles--------------------------------*/
 #top{
+    margin: 5% 10% 1%;
     height:90vh;
     background-image: url('../images/geometric\ blue.jpg');
     background-size: cover;
@@ -139,9 +140,7 @@ nav{
     align-items: center;
     text-align:center;
 }
-.bg-img{
-   margin: 20px; 
-}
+
 #top button{
     border-radius: 0;
     padding: 3% 10%;
@@ -167,6 +166,7 @@ nav{
 .proj-container{
     width: 30%;
     margin: 0 1%;
+    text-align: center;
 }
 .project-img{
     height: 80%;
@@ -174,9 +174,31 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: 3px solid black;
 }
 #projects button{
-    background-color: black;
+    color: #444649;
+    border: 1px solid #e31b6d;
+    border-radius: 0;
+    margin-top: 1%;
+    transition: 0.2s;
+}
+#projects a{
+    color: #444649;
+}
+#projects a:hover{
+    color: #fff;
+}
+#projects button:hover{
+    color: #fff;
+    background-color: #e31b6d;
+    border: 1px solid #e31b6d;
+}
+.container p{
+   color: black;
+   font-weight: bold;
+   text-transform: capitalize; 
+   padding-top: 1%;
 }
 
 
@@ -184,10 +206,23 @@ nav{
 footer{
     background-color: #1b242f;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 footer button{
     border: 1px solid #fff;
     margin: 0%;
+}
+footer p{
+    color: #fff;
+}
+.findme{
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+.findme a{
+    color: #e31b6d;
 }
