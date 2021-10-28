@@ -1,1 +1,228 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /* border:1px solid grey;  */
+}
+
+
+/*------------------------General Styles--------------------------------*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    color:#444649;
+    background-color:#fff;
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-size:6rem;
+    color: #fff;
+}
+h2{
+    font-size:3rem;
+    color: #fff;
+}
+h3{
+    font-size:2.2rem;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+button{
+    font-size:1.8rem;
+    padding:1% 2%;
+    
+    color: #fff;
+    background-color: inherit;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #04c2c9;
+    border: 2px solid #04c2c9;
+}
+section, footer{
+    padding:4% 0;
+}
+
+/*------------------------Header Styles--------------------------------*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index: 999; /*everything should scroll behind this*/
+    /* background-color:rgba(27, 36, 47, 0.8); */
+    background: #1b242f;
+    border-bottom: 3px solid #04c2c9;
+    padding: 1% 1%;
+}
+.my-name{
+    width:20%;
+    
+}
+.my-name h2{
+    color: #e31b6d;
+    /* font-style:oblique; */
+    font-weight:bolder;
+    text-transform: uppercase;
+    letter-spacing: 5pt;
+}
+.links{
+    width:30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.links a{
+    padding: 2% 5%;
+    font-weight: bold;
+}
+.links a:hover{
+    background-color: #e31b6d;
+}
+
+/*------------------------Top Section Styles--------------------------------*/
+#top{
+    margin: 5% 10% 1%;
+    height:90vh;
+    background-image: url('../images/geometric\ blue.jpg');
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+#top button{
+    border-radius: 0;
+    padding: 3% 10%;
+}
+#top button:hover{
+    border-radius: 0;
+}
+
+#top h1 span{
+    color: #e31b6d;
+}
+
+/*------------------------Projects Section Styles---------------------*/
+#projects{
+    background-color: #f5f5f5;
+}
+.container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+.proj-container{
+    width: 30%;
+    margin: 0 1%;
+    text-align: center;
+}
+.project-img{
+    height: 80%;
+    background-image: url("https://picsum.photos/700/500");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid black;
+}
+#projects button{
+    color: #444649;
+    border: 1px solid #e31b6d;
+    border-radius: 0;
+    margin-top: 1%;
+    transition: 0.2s;
+}
+#projects a{
+    color: #444649;
+}
+#projects a:hover{
+    color: #fff;
+}
+#projects button:hover{
+    color: #fff;
+    background-color: #e31b6d;
+    border: 1px solid #e31b6d;
+}
+.container p{
+   color: black;
+   font-weight: bold;
+   text-transform: capitalize; 
+   padding-top: 1%;
+}
+
+
+/*------------------------Footer Styles--------------------------------*/
+footer{
+    background-color: #1b242f;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+footer button{
+    border: 1px solid #fff;
+    margin: 0%;
+}
+footer p{
+    color: #fff;
+}
+.findme{
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+.findme a{
+    color: #e31b6d;
+}
