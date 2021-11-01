@@ -213,7 +213,7 @@ footer{
 }
 footer button{
     border: 1px solid #fff;
-    margin: 0%;
+    margin: 0% 0% 3%;
 }
 footer p{
     color: #fff;
@@ -227,4 +227,36 @@ footer p{
     color: #e31b6d;
 }
 
-/* media queries */
+/* ----------------------- media queries -------------------------- */
+
+@media (max-width: 800px){
+
+    .container {
+        justify-content: space-around;
+        height: 90vh;
+    }
+    .proj-container {
+        width: 45%;
+        margin: 2% 1%;
+        text-align: center;
+        height: 30%;
+    }
+    .my-name {
+        width: 20%;
+        margin-left: 10%;
+    }
+    .my-name h2 {
+        font-size: larger;
+    }
+    .links {
+        width: 50%;
+        margin-right: 10%;
+    }
+    #top {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 500px){
+    
+}
