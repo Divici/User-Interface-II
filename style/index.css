@@ -43,7 +43,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey; 
+    /* border:1px solid grey;  */
 }
 
 
@@ -239,7 +239,7 @@ footer p{
         width: 45%;
         margin: 2% 1%;
         text-align: center;
-        height: 30%;
+        height: auto;
     }
     .my-name {
         width: 20%;
@@ -248,6 +248,12 @@ footer p{
     .my-name h2 {
         font-size: larger;
     }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
     .links {
         width: 50%;
         margin-right: 10%;
@@ -255,8 +261,62 @@ footer p{
     #top {
         height: 60vh;
     }
+    #top button {
+        margin-top: 4%;
+    }
 }
 
 @media (max-width: 500px){
-    
+    header {
+        text-align: center;
+    }
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: inherit;
+        /* background-color: inherit; */
+        padding-bottom: 5%;
+    }
+    .links {
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .links a {
+        width: 30%;
+        border: 1px solid #1b242f;
+        background-color: #171e27;
+    }
+    .my-name {
+        width: 100%;
+        margin-left: 0%;
+        margin: 5% 0;
+    }
+    .my-name h2 {
+        font-size: 4rem;
+    }
+    #top {
+        height: 30vh;
+        margin: 5% 10% 1%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .proj-container {
+        width: 40%;
+        margin: 3% 1%;
+    }
+    .findme {
+        display: none;
+    }
+    footer button{
+        margin: 10% 0;
+        padding: 3% 5%;
+        border-radius: 0;
+    }
 }
