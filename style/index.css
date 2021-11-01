@@ -161,16 +161,16 @@ nav{
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    height: 100vh;
+    height: auto;
 }
 .proj-container{
     width: 30%;
-    margin: 0 1%;
+    margin: 1% 1%;
     text-align: center;
 }
-.project-img{
+.project-img img{
     height: 80%;
-    background-image: url("https://picsum.photos/700/500");
+    /* background-image: url("https://picsum.photos/700/500"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -233,7 +233,7 @@ footer p{
 
     .container {
         justify-content: space-around;
-        height: 90vh;
+        height: auto;
     }
     .proj-container {
         width: 45%;
